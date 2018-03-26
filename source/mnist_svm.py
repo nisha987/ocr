@@ -1,8 +1,8 @@
 import loader
 
-from sklerarn import svm
+from sklearn import svm
 
-def svm_baseline();
+def svm_baseline():
 	training_data, validation_data, test_data= loader.load_data()
 	clf=svm.SVC()
 	clf.fit(training_data[0], training_data[1])
